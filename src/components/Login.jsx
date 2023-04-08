@@ -42,16 +42,16 @@ const Login = () => {
         <div class="form-group">
           <label for="exampleInputEmail1">Email address</label>
           <input onChange = {onEmailChange} type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"/>
-          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          {/* <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> */}
         </div>
         <div class="form-group">
           <label for="exampleInputPassword1">Password</label>
           <input onChange={onPasswordChange} type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"/>
         </div>
-        <div className='btn' onClick={() => {
+        {/* <div className='btn' onClick={() => {
             navigate('/signup');
             window.location.reload();
-        }}>Click here to sign up</div>
+        }}>Click here to sign up</div> */}
         <br></br>
         <button class="btn btn-primary" id="subm" onClick={(e)=>onSubmit(e)}>Login</button>
       </form>
